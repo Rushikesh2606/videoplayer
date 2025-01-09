@@ -21,5 +21,6 @@ VideoView video;
         video.setVideoPath(path);
         video.setMediaController(md);
         video.start();
+        video.pause();
     }
 }
