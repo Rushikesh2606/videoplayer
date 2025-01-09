@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">VideoPlayer</string>
+    <string name="Local">Local</string>
+    <string name="premium">Premium</string>
+    <string name="Global">Global</string>
+    <string name="Download">Downloads</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="noDownload">No Downloads</string>
+    <string name="sign">JOIN NOW</string>
+    <string name="si">SIGN IN</string>
+    <string name="noadd">Ad-Lite* access to Top Contents</string>
+    <string name="down">Download Shows and Movies*</string>
+    <string name="Watch">Watch Parallely</string>
+    <string name="shows">Anime &amp; Webseries -Best Shows</string>
+    <string name="movies">Best Of Bollywood &amp; Tollywood</string>
+    <string name="holly">Best of the Hollywood</string>
+    <string name="name">Vidplayer</string>
+</resources>

@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2E373A"
+    android:padding="8dp">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2E373A"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:id="@+id/hero"
+        android:gravity="center_vertical">
+
+        <!-- App Icon -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/play"
+            android:contentDescription="App Logo"
+            android:layout_gravity="center_vertical" />
+
+        <!-- App Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:paddingStart="10dp"
+            android:fontFamily="sans-serif-black" />
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- Search Button -->
+        <ImageButton
+            android:id="@+id/open_search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/search"
+            android:tint="@color/white" />
+
+        <!-- User Button -->
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/user"
+            android:tint="@color/white" />
+    </LinearLayout>
+
+    <!-- Search Badge -->
+    <LinearLayout
+        android:id="@+id/search_badge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:padding="8dp"
+        android:background="#2E373A"
+        android:gravity="center_vertical">
+
+        <!-- Search Input -->
+        <AutoCompleteTextView
+            android:id="@+id/autoComplete"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:hint="Search here"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:background="@android:drawable/edit_text"
+            android:padding="10dp"
+            android:fontFamily="sans-serif"
+            android:inputType="text" />
+
+        <!-- Search Button -->
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/search"
+            android:tint="@color/white" />
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/previous"
+            android:tint="@color/white" />
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#2E373A"
+        android:layout_marginTop="8dp" />
+
+    <!-- Recycler View -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:clipToPadding="false"
+        android:padding="8dp"
+        android:background="#2E373A" />
+
+</LinearLayout>

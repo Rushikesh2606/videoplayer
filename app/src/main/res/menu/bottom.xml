@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/local"
+    android:icon="@drawable/baseline_folder_24"
+    android:title="@string/Local"/>
+    <item
+        android:id="@+id/Global"
+        android:icon="@drawable/baseline_folder_24"
+        android:title="@string/Global"/>
+    <item
+        android:id="@+id/Downloads"
+        android:icon="@drawable/baseline_arrow_circle_down_24"
+        android:title="@string/Download"/>
+    <item
+        android:id="@+id/premium"
+        android:icon="@drawable/baseline_play_circle_filled_24"
+        android:title="@string/premium"/>
+</menu>
